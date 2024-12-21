@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosUrl =  axios.create({
-    baseURL:"http://localhost:3000/",
+    baseURL:"https://adhaarocrserver.onrender.com/",
     withCredentials:true
 });
 
