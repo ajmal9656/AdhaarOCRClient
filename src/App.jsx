@@ -6,6 +6,7 @@ import { IoMdCloudUpload } from "react-icons/io";
 import axiosUrl from './utils/axios';
 import { Toaster } from 'sonner';
 import { toast } from 'sonner';
+import { parseData } from './services/axiosService';
 
 
 function App() {
@@ -76,7 +77,7 @@ function App() {
       try {
         setIsLoading(true)
         
-        const response = await axiosUrl.post('/parseData', formData); // Remove 'Content-Type' header
+        const response = await parseData(formData) // Remove 'Content-Type' header
         
         
         setAdhaardetails(response.data)
