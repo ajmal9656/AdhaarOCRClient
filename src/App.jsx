@@ -46,6 +46,7 @@ function App() {
         ), // only jpg, jpeg, png
     }),
     onSubmit: async (values) => {
+      setAdhaardetails(null)
       const formData = new FormData();
     
       // Append images to formData
